@@ -1,0 +1,27 @@
+.home{
+    height: 100%;
+    padding-top: 25vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+
+    &__picture{
+        height: 10rem;
+        width: 14rem;
+        border: 10px double $text-color;
+    }
+
+    &__title{
+        font-size: 4rem;
+        color: $primary-color;
+        text-shadow: -4px -2px $text-color;
+    }
+
+    &__line{
+        width: 13rem;
+        height: 4rem;
+        position: relative;
+        bottom: 2rem;
+        left: 3px;
+    }
+}

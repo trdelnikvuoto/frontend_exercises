@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Open+Sans:wght@300&display=swap');
+@import 'config', 'home', 'menu', 'recipes';
+
+
+body{
+    background-color: $secondary-color;
+    color: $text-color;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h2{
+    font-family: 'Girassol', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 0.8rem 1rem;
+    background-color: $text-color;
+    color: $secondary-color;
+}
