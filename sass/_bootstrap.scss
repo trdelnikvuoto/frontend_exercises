@@ -15,21 +15,25 @@
         margin-bottom: 2rem;
     }
 
+    &__projects{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     &__project{
         position: relative;
-        width: 310px;
-        height: 510px;
+        width: 300px;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow-y: hidden;
-        border: 10px double $secondary-color;
-        margin-bottom: 10px;
+        margin-bottom: 2rem;
 
         &:hover{
 
             .bootstrap__content{
-                bottom: 5px;
+                transform: scale(1,1);
             }
         }
     }
@@ -37,20 +41,21 @@
     &__picture{
         width: 300px;
         height: 500px;
-        padding: 9px 4px;
+        border: 10px double $secondary-color;
+        padding: 5px;
     }
 
     &__content{
         width: 280px;
         height: 480px;
         text-align: center;
+        padding: 0px 20px;
         position: absolute;
-        bottom: -500px;
-        transition: 0.4s;
+        transform: scale(0,0);
+        transition: 0.7s;
         background-color: $text-color;
         opacity: 0.9;
         color: $secondary-color;
-        padding: 10px;
 
         h3{
             margin: 100px 0 5px;
@@ -73,9 +78,13 @@
 
 @media screen and (max-width: 768px){
 
+    .bootstrap__projects{
+        flex-direction: column;
+    }
+
     .bootstrap__project{
-        width: 210px;
-        height: 410px;
+        width: 200px;
+        height: 400px;
     }
     .bootstrap__picture{
         width: 200px;

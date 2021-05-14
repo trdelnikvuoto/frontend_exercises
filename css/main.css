@@ -215,10 +215,19 @@
   margin-bottom: 2rem;
 }
 
+.bootstrap__projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .bootstrap__project {
   position: relative;
-  width: 310px;
-  height: 510px;
+  width: 300px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,32 +238,34 @@
       -ms-flex-align: center;
           align-items: center;
   overflow-y: hidden;
-  border: 10px double #eeeeee;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }
 
 .bootstrap__project:hover .bootstrap__content {
-  bottom: 5px;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 .bootstrap__picture {
   width: 300px;
   height: 500px;
-  padding: 9px 4px;
+  border: 10px double #eeeeee;
+  padding: 5px;
 }
 
 .bootstrap__content {
   width: 280px;
   height: 480px;
   text-align: center;
+  padding: 0px 20px;
   position: absolute;
-  bottom: -500px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   background-color: #212223;
   opacity: 0.9;
   color: #eeeeee;
-  padding: 10px;
 }
 
 .bootstrap__content h3 {
@@ -275,9 +286,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .bootstrap__projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .bootstrap__project {
-    width: 210px;
-    height: 410px;
+    width: 200px;
+    height: 400px;
   }
   .bootstrap__picture {
     width: 200px;
