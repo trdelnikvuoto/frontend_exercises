@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Girassol&family=Open+Sans:wght@300&display=swap');
-@import 'config', 'home', 'menu', 'bootstrap';
+@import 'config', 'home', 'menu', 'bootstrap', 'buttons', 'cards';
 
 
 body{
@@ -7,7 +7,6 @@ body{
     color: $text-color;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 h1, h2{

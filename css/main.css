@@ -306,6 +306,152 @@
   }
 }
 
+.buttons__body {
+  background-color: #243c5a;
+  height: 100%;
+}
+
+.buttons {
+  margin: 0 20% 2rem 20%;
+  overflow-x: hidden;
+}
+
+.buttons__main-title {
+  font-size: 3.5rem;
+  color: #eeeeee;
+  text-shadow: -4px -2px #212223;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+}
+
+.buttons__projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 792px) {
+  .buttons__projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* GREEN BUTTON */
+.button-out {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-image: url(../media/media-buttons/metal.jpg);
+  background-position: center;
+  border: 1px solid #858585;
+  -webkit-box-shadow: 0px 0px 10px #313131;
+          box-shadow: 0px 0px 10px #313131;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+
+.button-in {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: radial-gradient(#9bd144, #599100, #3d6300 60%);
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+  border: none;
+  cursor: pointer;
+}
+
+.button-in:hover {
+  -webkit-box-shadow: 0px 0px 3px black;
+          box-shadow: 0px 0px 3px black;
+}
+
+.button-in:active {
+  -webkit-box-shadow: inset 0px 0px 5px #313131;
+          box-shadow: inset 0px 0px 5px #313131;
+}
+
+/* RED BUTTON */
+.button2-out {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(138, 138, 138, 0.425)), to(rgba(83, 83, 83, 0.425))), url(../media/media-buttons/rust.jpg);
+  background-image: linear-gradient(rgba(138, 138, 138, 0.425), rgba(83, 83, 83, 0.425)), url(../media/media-buttons/rust.jpg);
+  background-position: center;
+  border: 1px solid #181818;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+
+.button2-in {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: radial-gradient(#d14444, #bd0000, #850000 60%);
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+  border: none;
+  cursor: pointer;
+}
+
+.button2-in:hover {
+  -webkit-box-shadow: 0px 0px 3px black;
+          box-shadow: 0px 0px 3px black;
+}
+
+.button2-in:active {
+  -webkit-box-shadow: inset 0px 0px 5px black;
+          box-shadow: inset 0px 0px 5px black;
+}
+
+.cards__body {
+  background-color: #243c5a;
+  height: 100%;
+}
+
+.cards {
+  margin: 0 20% 2rem 20%;
+  overflow-x: hidden;
+}
+
+.cards__main-title {
+  font-size: 3.5rem;
+  color: #eeeeee;
+  text-shadow: -4px -2px #212223;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+}
+
 body {
   background-color: #eeeeee;
   color: #212223;

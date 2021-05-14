@@ -1,0 +1,18 @@
+.cards__body{
+    background-color: $primary-color;
+    height: 100%;
+}
+
+.cards{
+    margin: 0 20% 2rem 20%;
+    overflow-x: hidden;
+
+    &__main-title{
+        font-size: 3.5rem;
+        color: $secondary-color;
+        text-shadow: -4px -2px $text-color;
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+        letter-spacing: 3px;
+    }
+}

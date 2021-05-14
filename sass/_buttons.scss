@@ -1,0 +1,93 @@
+.buttons__body{
+    background-color: $primary-color;
+    height: 100%;
+}
+
+.buttons{
+    margin: 0 20% 2rem 20%;
+    overflow-x: hidden;
+
+    &__main-title{
+        font-size: 3.5rem;
+        color: $secondary-color;
+        text-shadow: -4px -2px $text-color;
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+        letter-spacing: 3px;
+    }
+
+    &__projects{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 792px){
+    .buttons__projects{
+        flex-direction: column;
+    }
+}
+
+
+/* GREEN BUTTON */
+.button-out{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: url(../media/media-buttons/metal.jpg);
+    background-position: center;
+    border: 1px solid rgb(133, 133, 133);
+    box-shadow: 0px 0px 10px rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.button-in{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: radial-gradient(rgb(155, 209, 68), rgb(89, 145, 0), rgb(61, 99, 0) 60%);
+    box-shadow: 0px 0px 5px black;
+    border: none;
+    cursor: pointer;
+}
+.button-in:hover{
+    box-shadow: 0px 0px 3px black;
+}
+.button-in:active{
+    box-shadow: inset 0px 0px 5px rgb(49, 49, 49);
+}
+
+/* RED BUTTON */
+.button2-out{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgba(138, 138, 138, 0.425), rgba(83, 83, 83, 0.425)), url(../media/media-buttons/rust.jpg);
+    background-position: center;
+    border: 1px solid rgb(24, 24, 24);
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.button2-in{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: radial-gradient(rgb(209, 68, 68), rgb(189, 0, 0), rgb(133, 0, 0) 60%);
+    box-shadow: 0px 0px 5px black;
+    border: none;
+    cursor: pointer;
+}
+.button2-in:hover{
+    box-shadow: 0px 0px 3px black;
+}
+.button2-in:active{
+    box-shadow: inset 0px 0px 5px black;
+}
