@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriele Greco - Home</title>
+    <title>Gabriele Greco - Bootstrap</title>
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body>
+<body class="bootstrap__body">
     <header>
         <div class="menu-btn">
             <span class="menu-btn__burger"></span>
         </div>
         <nav class="nav">
             <ul class="menu-nav">
-                <li class="menu-nav__item active">
+                <li class="menu-nav__item">
                     <a href="index.html" class="menu-nav__link">
                         Home
                     </a>
@@ -30,7 +30,7 @@
                         Cards
                     </a>
                 </li>
-                <li class="menu-nav__item">
+                <li class="menu-nav__item active">
                     <a href="bootstrap.html" class="menu-nav__link">
                         Bootstrap
                     </a>
@@ -39,11 +39,18 @@
         </nav>
     </header>
     <main>
-        <section class="home">
-            <img src="./media/laptop.png" class="home__picture" alt="broken bottle">
-            <h2>Front-end exercises by</h2>
-            <h1 class="home__title">Gabriele Greco</h1>
-            <img src="./media/line.png" class="home__line" alt="line">
+        <section class="bootstrap">
+            <h1 class="bootstrap__main-title">Bootstrap projects</h1>
+            <div class="bootstrap__projects">
+                <article class="bootstrap__project">
+                    <img src="./media/presto_screenshot.png" class="bootstrap__picture" alt="project preview">
+                    <div class="bootstrap__content">
+                        <h3>Presto</h3>
+                        <p>One of my homeworks during Hackademy24 booting camp</p>
+                        <a href="https://hackademy24.gitlab.io/gabriele_greco_presto"><i class="far fa-eye"></i> Preview</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
